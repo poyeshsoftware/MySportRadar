@@ -1,8 +1,14 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+//@import "~vuetify/dist/vuetify.min.css";
+//@import "~@mdi/font/css/materialdesignicons.min.css";
 
-// Variables
-@import 'variables';
+a{
+    @apply text-blue-600;
+}
 
-// Bootstrap
-@import '~bootstrap/scss/bootstrap';
+
+.router-link-exact-active {
+    @apply font-bold;
+}
