@@ -14,7 +14,7 @@
                                 <p class="px-4 w-full py-2 font-bold text-black">
                                     {{team.name}}
                                 </p>
-                                <ul class="px-4 w-full flex flex-row text-sm">
+                                <ul class="px-4 w-full flex flex-col text-sm">
                                     <li v-for="sport in team.sports">
                                         {{sport.name}}
                                     </li>

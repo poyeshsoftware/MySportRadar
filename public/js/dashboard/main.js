@@ -44331,7 +44331,7 @@ var render = function() {
                           _c(
                             "ul",
                             {
-                              staticClass: "px-4 w-full flex flex-row text-sm"
+                              staticClass: "px-4 w-full flex flex-col text-sm"
                             },
                             _vm._l(team.sports, function(sport) {
                               return _c("li", [
