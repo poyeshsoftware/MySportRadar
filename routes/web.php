@@ -13,10 +13,24 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+// Authentication Routes... we just need login routes...
+Route::get('login', [
+    'as' => 'login',
+    'uses' => 'Auth\LoginController@showLoginForm'
+]);
+Route::post('login', [
+    'as' => '',
+    'uses' => 'Auth\LoginController@login'
+]);
+Route::post('logout', [
+    'as' => 'logout',
+    'uses' => 'Auth\LoginController@logout'
+]);
+
+
+Route::middleware('auth')->group(function () {
+    Route::get('/dashboard', 'Dashboard\DashboardController')->name('dashboard');
+    Route::get('/dashboard/{any}', 'Dashboard\DashboardController')->where('any', '.*');
 });
 
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{any}', 'Home\HomeController')->name('home')->where('any', '.*');
