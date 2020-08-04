@@ -10,7 +10,7 @@ Examples:
 
 ## Video Introduction 
 
-## API Live heroku App URL
+## Live heroku App URL
 
 ## How to Setup project
 
