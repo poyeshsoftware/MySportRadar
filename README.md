@@ -1,5 +1,5 @@
 
-## SportRadar Back-end - Front-end Coding Challenge 
+## SportRadar Back-end , Front-end Coding Challenge 
 I have used Laravel as back-end Php Framework and ( Vue.Js And TailwindCss for front-end ) .
 I also used Laravel Sanctum for Authentication. 
 
