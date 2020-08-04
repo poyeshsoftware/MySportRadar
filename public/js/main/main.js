@@ -2054,10 +2054,11 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
       }))();
     },
     findSportIdByName: function findSportIdByName(sportName) {
-      var index = this.$store.state.sports.findIndex(function (x) {
+      var index = this.$store.state.sports.find(function (x) {
         return x.name === sportName;
-      });
-      return this.$store.state.sports[index].id;
+      }); // console.log('index is: ' + index);
+
+      return index.id;
     }
   },
   watch: {
