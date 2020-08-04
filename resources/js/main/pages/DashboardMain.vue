@@ -65,18 +65,16 @@
             async getEvents() {
                 var sportIdQuery = '';
                 if (this.defaultFilterSelected !== "All Sports") {
-                    sportIdQuery = '?sport_id=' + this.findSportIdByName(this.defaultFilterSelected)[0].id;
+                    let the_sport_id = this.findSportIdByName(this.defaultFilterSelected);
+                    sportIdQuery = '?sport_id=' + the_sport_id;
                 }
 
                 let response = await axios.get("/api/events" + sportIdQuery);
                 this.events = response.data.data
             },
             findSportIdByName(sportName) {
-                return this.$store.state.sports.filter(sportItem => {
-                    if (sportItem.name === sportName) {
-                        return sportItem
-                    }
-                })
+                let index = this.$store.state.sports.findIndex(x => x.name === sportName);
+                return this.$store.state.sports[index].id;
             },
         },
         watch: {
