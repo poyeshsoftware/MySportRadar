@@ -9,8 +9,7 @@ Examples:
 - Sun., 23.10.2019, 09:45, Ice Hockey, KAC - Capitals
 
 ## Video Introduction 
-
-## Live heroku App URL
+ [https://payam.pro/SportRadar.mp4](https://payam.pro/SportRadar.mp4) 
 
 ## How to Setup project
 

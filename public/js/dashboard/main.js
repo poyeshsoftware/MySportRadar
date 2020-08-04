@@ -2150,36 +2150,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -43820,7 +43790,7 @@ var render = function() {
           [
             _vm._v(
               "\n                " +
-                _vm._s(_vm.isUpdate ? "Update Sport" : "Create New Sport") +
+                _vm._s(_vm.isUpdate ? "Update Team" : "Create New Team") +
                 "\n            "
             )
           ]
