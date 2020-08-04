@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('API')->group(function () {
 
     Route::get('/events', 'EventController@index')->name('events');
-    Route::get('/sports', 'SportCOntroller@index')->name('sports');
+    Route::get('/sports', 'SportController@index')->name('sports');
     Route::get('/teams', 'TeamController@index')->name('teams');
 
     Route::middleware('auth:sanctum')->group(function () {
@@ -26,8 +26,8 @@ Route::namespace('API')->group(function () {
         Route::delete('/events/{theEvent:id}', 'EventController@destroy')->name('events.delete');;;
 
         Route::post('/sports', 'SportCOntroller@store');
-        Route::patch('/sports/{sport:id}', 'SportCOntroller@update')->name('sports.update');
-        Route::delete('/sports/{sport:id}', 'SportCOntroller@destroy')->name('sports.delete');
+        Route::patch('/sports/{sport:id}', 'SportController@update')->name('sports.update');
+        Route::delete('/sports/{sport:id}', 'SportController@destroy')->name('sports.delete');
 
         Route::post('/teams', 'TeamController@store');
         Route::patch('/teams/{team:id}', 'TeamController@update')->name('teams.update');
