@@ -12,12 +12,6 @@
 
                 <div class="flex flex-col mt-4 space-y-2">
                     <label>Select Event Date:</label>
-                    <!--                    <VueTailwindPicker-->
-                    <!--                        class=""-->
-                    <!--                        @change="(v) => checkin = v"-->
-                    <!--                    >-->
-                    <!--                        <input type="text" v-model="checkin" />-->
-                    <!--                    </VueTailwindPicker>-->
 
                     <flat-pickr
                         class="rounded border p-2"
@@ -37,14 +31,6 @@
                             {{item}}
                         </option>
                     </select>
-                    <!--                    <v-select-->
-                    <!--                        v-model="sport"-->
-                    <!--                        :items="this.$store.getters.sportsNames"-->
-                    <!--                        label="Select Sport Category"-->
-                    <!--                        :disabled="canChooseSport"-->
-                    <!--                        dense-->
-                    <!--                        solo-->
-                    <!--                    ></v-select>-->
 
                 </div>
 
@@ -56,14 +42,6 @@
                             {{item}}
                         </option>
                     </select>
-                    <!--                    <v-select-->
-                    <!--                        v-model="team1"-->
-                    <!--                        :items="teamsNames"-->
-                    <!--                        label="Select Team 1"-->
-                    <!--                        :disabled="canChooseTeam1"-->
-                    <!--                        dense-->
-                    <!--                        solo-->
-                    <!--                    ></v-select>-->
                 </div>
 
                 <div class="flex flex-col mt-6 space-y-2">
@@ -75,14 +53,6 @@
                             {{item}}
                         </option>
                     </select>
-                    <!--                    <v-select-->
-                    <!--                        v-model="team2"-->
-                    <!--                        :items="teamsNames_2"-->
-                    <!--                        label="Select Team 2"-->
-                    <!--                        :disabled="canChooseTeam2"-->
-                    <!--                        dense-->
-                    <!--                        solo-->
-                    <!--                    ></v-select>-->
                 </div>
 
                 <button

@@ -42,7 +42,7 @@
                     :disabled="!(canSendForm)"
                     @click.prevent="sendRequest"
                 >
-                    {{ isUpdate ? "Update Sport" : "Create New Sport" }}
+                    {{ isUpdate ? "Update Team" : "Create New Team" }}
                 </button>
             </div>
         </div>

@@ -74,7 +74,6 @@
             },
             findSportIdByName(sportName) {
                 let index = this.$store.state.sports.find(x => x.name === sportName);
-                // console.log('index is: ' + index);
                 return index.id;
             },
         },
