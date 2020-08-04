@@ -10,6 +10,14 @@ Examples:
 
 ### Video Introduction ,I say Definitely have a look at it !
  [https://payam.pro/SportRadar.mp4](https://payam.pro/SportRadar.mp4) 
+ 
+ ### Describing the project.
+ 
+ ![Sport Radar ERD Image](https://payam.pro/ERD_photo.png)
+ 
+ As you can see in above picture, well we have different Sport Fields. and I assumed that maybe a team should can participate in different Sport field, Like it participates in Football and also in Basketball , so I made the connection as many to many and we have a middle table named sport_team , that connects teams and sports together, this way teams can participate in more than just one sport field.
+ 
+ We have events , that they have date , sport field of the event and the teams who have match together. I could add more stuff to it like the results, I could add them in the events table or make a seprate table for the results.
 
 ## How to Setup project
 
