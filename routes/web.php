@@ -33,4 +33,4 @@ Route::middleware('auth')->group(function () {
     Route::get('/dashboard/{any}', 'Dashboard\DashboardController')->where('any', '.*');
 });
 
-Route::get('/{any}', 'Home\HomeController')->name('home')->where('any', '.*');
+Route::get('/{any}', 'Index\HomeController')->name('home')->where('any', '.*');
