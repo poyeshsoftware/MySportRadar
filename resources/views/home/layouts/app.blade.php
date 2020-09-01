@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('main.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Scripts -->
 
@@ -22,7 +22,7 @@
     <nav class="bg-gray-200 border-b-2">
         <div class="container mx-auto flex flex-row justify-between py-4">
             <a class="block ml-6  font-medium" href="{{ url('/') }}">
-                {{ config('main.name', 'Laravel') }}
+                {{ config('app.name', 'Laravel') }}
             </a>
 
 
