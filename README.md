@@ -9,11 +9,11 @@ Examples:
 - Sun., 23.10.2019, 09:45, Ice Hockey, KAC - Capitals
 
 ### Video Introduction ,I say Definitely have a look at it !
- [Watch Video - Click Here ](https://payam.pro/SportRadar.mp4) 
+ [Watch Video - Click Here ](https://payamblog.com/SportRadar.mp4) 
  
  ### Describing the project.
  
- ![Sport Radar ERD Image](https://payam.pro/ERD_photo.png)
+ ![Sport Radar ERD Image](https://payamblog.com/ERD_photo.png)
  
  As you can see in above picture, well we have different Sport Fields. and I assumed that maybe a team should can participate in different Sport fields, Like it participates in Football and also in Basketball , so I made the connection as many to many and we have a middle table named sport_team , that connects teams and sports together, this way teams can participate in more than just one sport field.
  
@@ -43,4 +43,4 @@ to run tests you can use this command in terminal (command line):
 to use Laravel Sanctum for authentication you neeed to set SANCTUM_STATEFUL_DOMAINS below APP_URL in .env file to your domain name.
 
 # Made By :
-Payam Ghader Kourehpaz [https://payam.pro](https://payam.pro)
+Payam Ghader Kourehpaz [https://payamblog.com](https://payamblog.com)
